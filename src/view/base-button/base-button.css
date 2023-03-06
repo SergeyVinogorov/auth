@@ -1,0 +1,21 @@
+.base-button {
+  color: var(--primary-text);
+  padding: 0.8em 8em;
+  border-radius: 0.8em;
+  background: var(--action);
+  font-size: 1rem;
+  margin-top: 1.7em;
+  border: none;
+  outline: none;
+  appearance: none;
+  box-shadow: 0 0 1px var(--primary-text);
+  cursor: pointer;
+}
+
+.base-button:disabled {
+  opacity: 50%;
+}
+
+.base-button:focus {
+  box-shadow: 0 0 2px var(--primary-text);
+}

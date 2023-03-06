@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../fonts/lexend/LexendDeca-Regular.woff") format("woff"),
+  url("../fonts/lexend/LexendDeca-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/montserrat/Montserrat-Medium.woff') format('woff'),
+  url('../fonts/montserrat/Montserrat-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}

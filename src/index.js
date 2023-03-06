@@ -1,21 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import { BrowserRouter } from 'react-router-dom'
+
+import { StoreProvider } from 'context/StoreContext.jsx'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import ThemeContextWrapper from './theme'
-import { BrowserRouter } from 'react-router-dom'
+
+import { Loading } from 'view'
+import './static/styles/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <ThemeContextWrapper>
-      <React.Suspense fallback={<div>Loading ...</div>}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </React.Suspense>
-    </ThemeContextWrapper>
+    <StoreProvider>
+        <React.Suspense fallback={Loading}>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </React.Suspense>
+    </StoreProvider>
   </React.StrictMode>
 )
 

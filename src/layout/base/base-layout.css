@@ -1,0 +1,24 @@
+.base-layout {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.base-layout-footer {
+  margin-top: auto;
+  position: relative;
+}
+
+.base-layout-decoration {
+  display: block;
+  height: inherit;
+}
+
+.base-layout-decoration-dark #light-wave {
+  fill-opacity: 0.09;
+}
+
+.base-layout-decoration-dark #dark-wave {
+  fill-opacity: 0.13;
+  fill: #E5E5E5;
+}

@@ -1,0 +1,27 @@
+
+.is-on-dark {
+  transform: rotate(180deg);
+}
+
+.is-off-dark {
+  transform: rotate(0deg);
+}
+
+.toggle-theme-icon {
+  display: block;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+
+.toggle-theme-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.toggle-theme-button:hover #white-circle {
+  filter: url('#filter_shadow')
+}

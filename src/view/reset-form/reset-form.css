@@ -1,0 +1,21 @@
+.reset-form {
+  font-size: 0.875rem;
+}
+
+.reset-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.action-link {
+  font-family: Montserrat sans-serif;
+  font-size: 1em;
+  color: var(--primary-link);
+}

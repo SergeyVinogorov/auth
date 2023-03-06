@@ -1,0 +1,91 @@
+.login-form {
+  font-size: 0.875rem;
+}
+
+.login-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.login-field--indent {
+  margin-bottom: 2.5em;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.remember-container {
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+}
+
+.action-remember {
+  position: absolute;
+  opacity: 0%;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+.action-checkmark {
+  width: 1.3em;
+  height: 1.3em;
+  background: var(--primary-field);
+  border-radius: 0.3em;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+}
+
+.action-checkmark::after {
+  position: absolute;
+  content: '';
+  display: none;
+}
+
+.remember-container:hover .action-remember ~ .action-checkmark {
+  background: var(--primary-field);
+}
+
+.remember-container .action-remember:checked ~ .action-checkmark {
+  background: var(--primary-field);
+}
+
+.action-remember:hover + .action-checkmark {
+  box-shadow: 0 0 0 1px var(--action);
+}
+
+.action-remember:focus + .action-checkmark {
+  box-shadow: 0 0 0 2px var(--action);
+}
+
+.action-remember:disabled + .action-checkmark {
+  opacity: 0.5;
+}
+
+.remember-container .action-checkmark::after {
+  left: 0.4em;
+  top: 0.1em;
+  width: 0.4em;
+  height: 0.7em;
+  border: solid var(--white);
+  border-width: 0 0.2em 0.2em 0;
+  transform: rotate(45deg);
+}
+
+.remember-container .action-remember:checked ~ .action-checkmark::after {
+  display: block;
+}
+
+.action-label {
+  margin: 0 0 0 2em;
+  font-size: 1em;
+  color: var(--primary-text);
+  cursor: pointer;
+}
