@@ -29,7 +29,7 @@ export const ResetForm = ({ sendReset, isSend, loading }) => {
         <fieldset>
           <legend className='visually-hidden'>Actions fields</legend>
           <div className="actions">
-            <a role='button' href='/#/login' className='action-link'>Back to sign in</a>
+            <a role='button' href='/login' className='action-link'>Back to sign in</a>
           </div>
           <BaseButton
             id='resetBtn'
