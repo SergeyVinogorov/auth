@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/auth/static/css/main.dc255059.css",
+    "main.js": "/auth/static/js/main.1168ac4e.js",
+    "static/js/787.175df1e2.chunk.js": "/auth/static/js/787.175df1e2.chunk.js",
+    "static/media/Montserrat-Medium.woff": "/auth/static/media/Montserrat-Medium.2451e96bc4c62e5ad1d0.woff",
+    "static/media/Montserrat-Medium.woff2": "/auth/static/media/Montserrat-Medium.cf734a3745838e63cc2a.woff2",
+    "static/media/LexendDeca-Regular.woff": "/auth/static/media/LexendDeca-Regular.b68c0c0b0964dba3b3d2.woff",
+    "static/media/LexendDeca-Regular.woff2": "/auth/static/media/LexendDeca-Regular.60290083375b8a7744bb.woff2",
+    "static/media/footWave.svg": "/auth/static/media/footWave.85e7639f6caf1690955d1d803e2bfa50.svg",
+    "static/media/toggleModeIcon.svg": "/auth/static/media/toggleModeIcon.be8b1ce45cc05eb0f3caae92b90c822d.svg",
+    "index.html": "/auth/index.html",
+    "main.dc255059.css.map": "/auth/static/css/main.dc255059.css.map",
+    "main.1168ac4e.js.map": "/auth/static/js/main.1168ac4e.js.map",
+    "787.175df1e2.chunk.js.map": "/auth/static/js/787.175df1e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc255059.css",
+    "static/js/main.1168ac4e.js"
+  ]
+}
