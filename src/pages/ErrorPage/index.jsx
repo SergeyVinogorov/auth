@@ -11,7 +11,7 @@ export const ErrorPage = () => {
           <header className="app-header">
             <h1>404, not found</h1>
           </header>
-          <a className='app-link app-block' href='/'>Home page</a>
+          <a className='app-link app-block' href='/#/'>Home page</a>
         </div>
       </BaseLayout>
     </ErrorBoundary>

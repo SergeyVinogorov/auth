@@ -1,7 +1,7 @@
 export const PATHS = {
   login: '/login',
   reset: '/reset',
-  error: './404',
+  error: '/404',
   home: '/'
 }
 

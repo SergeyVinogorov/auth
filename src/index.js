@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 import { StoreProvider } from 'context/StoreContext.jsx'
 import App from './App'
@@ -14,9 +14,9 @@ root.render(
   <React.StrictMode>
     <StoreProvider>
         <React.Suspense fallback={Loading}>
-          <BrowserRouter>
+          <HashRouter>
             <App />
-          </BrowserRouter>
+          </HashRouter>
         </React.Suspense>
     </StoreProvider>
   </React.StrictMode>

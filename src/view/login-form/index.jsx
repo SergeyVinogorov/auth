@@ -46,7 +46,7 @@ export const LoginForm = ({ getAccess, loading }) => {
                 <input type="checkbox" id='remember' name='remember' disabled={loading} onChange={changeHandler} className='action-remember'/>
                 <span className='action-checkmark'></span>
               </label>
-              <a role='button' href='/reset' className='action-link'>Forgot password?</a>
+              <a role='button' href='/#/reset' className='action-link'>Forgot password?</a>
           </div>
           <BaseButton
             id='loginBtn'
