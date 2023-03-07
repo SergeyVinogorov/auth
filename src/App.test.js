@@ -1,11 +1,11 @@
 import * as React from 'react'
 import App from './App.jsx'
-import { BrowserRouter, MemoryRouter } from 'react-router-dom'
+import { MemoryRouter, HashRouter } from 'react-router-dom'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { StoreProvider } from './context'
 
 const setup = () => {
-  const utils = render(<BrowserRouter><App /></BrowserRouter>, { wrapper: StoreProvider })
+  const utils = render(<HashRouter><App /></HashRouter>, { wrapper: StoreProvider })
   const login = utils.getByLabelText('login-input')
   const password = utils.getByLabelText('password-input')
   const submit = utils.getByLabelText('submit-input')
@@ -18,7 +18,7 @@ const setup = () => {
 }
 
 test('full app rendering/navigating', async () => {
-  render(<App />, { wrapper: BrowserRouter })
+  render(<App />, { wrapper: HashRouter })
   // verify page content for default route
   expect(screen.getByText(/Sign in and start managing your candidates!/i)).toBeInTheDocument()
 })

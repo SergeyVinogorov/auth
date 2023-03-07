@@ -30,4 +30,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The project could be found in this path: https://sergeyvinogorov.github.io/auth/
