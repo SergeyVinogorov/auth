@@ -1,9 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { useForm } from 'hooks'
 import { TextInput } from '../text-input'
 import { BaseButton } from '../base-button'
-
 import './login-form.css'
 
 export const LoginForm = ({ getAccess, loading }) => {
@@ -46,7 +46,7 @@ export const LoginForm = ({ getAccess, loading }) => {
                 <input type="checkbox" id='remember' name='remember' disabled={loading} onChange={changeHandler} className='action-remember'/>
                 <span className='action-checkmark'></span>
               </label>
-              <a role='button' href='/reset' className='action-link'>Forgot password?</a>
+              <Link role='button' to='/reset' className='action-link'>Forgot password?</Link>
           </div>
           <BaseButton
             id='loginBtn'

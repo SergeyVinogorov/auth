@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { useForm } from 'hooks'
 import { BaseButton } from '../base-button'
-import { TextInput } from '../text-input'
 
+import { TextInput } from '../text-input'
 import './reset-form.css'
 export const ResetForm = ({ sendReset, isSend, loading }) => {
   const { submitHandler, changeHandler, errors } = useForm(sendReset)
@@ -29,7 +30,7 @@ export const ResetForm = ({ sendReset, isSend, loading }) => {
         <fieldset>
           <legend className='visually-hidden'>Actions fields</legend>
           <div className="actions">
-            <a role='button' href='/login' className='action-link'>Back to sign in</a>
+            <Link role='button' to='/login' className='action-link'>Back to sign in</Link>
           </div>
           <BaseButton
             id='resetBtn'
