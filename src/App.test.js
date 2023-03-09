@@ -6,9 +6,9 @@ import { StoreProvider } from './context'
 
 const setup = () => {
   const utils = render(<HashRouter><App /></HashRouter>, { wrapper: StoreProvider })
-  const login = utils.getByLabelText('login-input')
-  const password = utils.getByLabelText('password-input')
-  const submit = utils.getByLabelText('submit-input')
+  const login = utils.getByLabelText('Login')
+  const password = utils.getByLabelText('Password')
+  const submit = utils.container.querySelector('#loginBtn')
   return {
     login,
     password,

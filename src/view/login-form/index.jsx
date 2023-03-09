@@ -23,7 +23,6 @@ export const LoginForm = ({ getAccess, loading }) => {
             errors={errors}
             onChange={changeHandler}
             placeholder='login@mail.com'
-            ariaLabel='login-input'
             className='login-field--indent'
             text='Login'
           />
@@ -34,7 +33,6 @@ export const LoginForm = ({ getAccess, loading }) => {
             errors={errors}
             onChange={changeHandler}
             placeholder='password'
-            ariaLabel='password-input'
             text='Password'
           />
         </fieldset>
@@ -51,7 +49,6 @@ export const LoginForm = ({ getAccess, loading }) => {
           <BaseButton
             id='loginBtn'
             type='submit'
-            ariaLabel='submit-input'
             loading={loading}
             text='Login'
           />
